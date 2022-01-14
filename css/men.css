@@ -1,0 +1,14 @@
+
+
+
+
+.item_content {
+    display: block;
+    margin-right: 24px;
+    flex: 1;
+}
+
+.item_image {
+    position:relative;
+    flex: 1;
+}

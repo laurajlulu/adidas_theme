@@ -1,0 +1,644 @@
+@charset "utf-8";
+
+/*폰트*/ 
+@font-face {
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    src: url('../font/fa-solid-900.woff2') format('woff2'), 
+        url('../font/fa-solid-900.woff') format("woff"), 
+        url("../font/fa-solid-900.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    font-weight: 400;
+    src: url('../font/NanumSquareRoundOTFR.otf') format('otf'),
+        url('../font/NanumSquareRoundR.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumSquareRoundBold';
+    font-weight: 600;
+    src: url('../font/NanumSquareRoundOTFB.otf') format('otf'),
+        url('../font/NanumSquareRoundB.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumDaHaengCe';
+    font-weight: 400;
+    src: url('../font/NanumDaHaengCe.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nanum';
+    font-weight: 400;
+    src: url('../font/NanumGothic.eot?#iefix') format('embedded-opentype'),
+        url('../font/NanumGothic.woff') format('woff'),
+        url('../font/NanumGothic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumSquareBold';
+    font-weight: 800;
+    src: url('../font/NanumSquareB.otf') format('opentype'),
+        url('../font/NanumSquareB.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 400;
+    src: url('../font/NanumSquareR.otf') format('opentype'),
+        url('../font/NanumSquareR.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumBold';
+    font-weight: 600;
+    src: url('../font/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/NanumGothicBold.woff') format('woff'),
+        url('../font/NanumGothicBold.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'NotoSansKR';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../font/NotoSansKR-Black.woff') format('woff'),
+	    url('../font/NotoSansKR-Black.otf') format('opentype');
+}
+
+@font-face{
+	font-family: 'NotoSansKR';
+	font-style: bold;
+	font-weight: 900;
+	src: url('../font/NotoSansKR-Bold.woff') format('woff'),
+	    url('../font/NotoSansKR-Bold.woff') format('opentype');
+}
+
+
+@font-face {
+    font-family: "adiBlack";
+    font-weight: normal;
+    src: url('../font/adineuePRO-BlackWeb.woff') format('woff'),
+        url('../font/adineuePRO-BlackWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "AdineuePRO";
+    font-style: normal;
+    font-weight: 600;
+    src: url('../font/adineuePRO-Bold.woff2') format("woff2"), 
+        url('../font/adineuePRO-Bold.woff') format("woff");
+}
+
+/*base*/
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html, body, div, header, nav, section, aside, article, footer, figure, figcaption, fieldset, legend, ul, ol, dl, li, dl, dt, dd, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    text-align: center;
+    color: #797b80;
+    font: bold 12px 'Dotum', '돋움';
+    letter-spacing: 0;
+    min-width: 950px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    border: 0;
+}
+
+
+/** 헤더시작 **/
+/* 상단 전체바메뉴 */
+
+nav {
+    background: #000;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: left;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+/**최상단 우측 **/
+.top_bar {
+    height: 33px;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom right, #000, #000, #000, #000, #000, #222, #333);
+    overflow: hidden;
+}
+
+.bar_inner {
+    height: 33px;
+    margin: 0 100px auto;
+}
+ 
+.top_bar ul {
+    height: 33px;
+    display: flex;
+    position: relative;
+    top: 0;
+    right: 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top_bar_menu li {
+    float: right;
+    padding: 3px;
+
+}
+
+.top_bar_menu li:hover {
+    background: none;
+}
+
+.top_bar_menu:nth-child(2) {
+    cursor: default;
+}
+
+.top_bar_menu a {
+    text-decoration: none;
+    align-items: center;
+    color: #fff;
+    font-size: 8px;
+    padding: 0;
+}
+
+.top_bar_menu a:hover {
+    color: #fff;
+}
+
+
+/**메인메뉴**/
+.container {
+    height: 47px;/*1000px*/
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 18px;
+    left: 100px;
+}
+
+.logo>a{
+    width: 15px;
+    height: 15px;
+    display: block;
+}
+
+.menu_main {
+    top: 7px;
+}
+
+.menu_main {
+    width: 100%;
+    text-align: center;
+} 
+
+.menu_main li {
+    display:inline-block;
+}
+
+.menu_main>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu_main a:hover {
+    color: #000;
+    background: #fff;
+}
+
+.divide>a {
+    font-size: 5px;
+    cursor: default; 
+}
+
+.divide:hover {
+    color: #fff !important;
+    background-color: #000 !important;
+    cursor: default !important;
+}
+
+
+.menu_sub {
+    position: absolute;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    display: none;    /*여기있다 서브메뉴 보이기*/
+    color: #333;
+    padding: 2em;
+    font-family: 'NanumSquare';
+    font-size: 12px;
+    z-index: 10;
+}
+
+nav li:hover .menu_sub {
+    display: block;
+}
+
+.menu_sub li {
+    display: block;
+}
+
+.menu_sub a {
+    padding: 0;
+    margin-bottom: 0.7em;
+    color: #333;
+}
+
+.menu_sub a:hover {
+    color: #025f8e;
+}
+
+.menu_category {
+    margin-bottom: 20px;
+}
+
+.menu_category:first-of-type {
+    margin-top: 0;
+}
+
+
+.menu_col1,
+.menu_col2,
+.menu_col3,
+.menu_col4 {
+    float: left;
+    width: 23%;
+    height: 320px;
+
+}
+
+.menu_sub ul {
+    position:relative;
+    height: 280px;
+}
+
+.menu_col1>h3,
+.menu_col2>h3 {
+    text-align: left;
+}
+
+.link_only a:hover {
+    color: #025f8e;
+}
+
+/**검색창**/ 
+#calendar {
+    margin-right: 200px !important;
+}
+input[name=search] {
+    font-family: 'NanumSquare';
+    width: 130px;
+    border: 2px solid #888;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ddd;
+    background-image: url('../images/go_search.png');
+    background-position: 130px 4px;
+    background-repeat: no-repeat;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4 ease-in-out;
+}
+
+input[name=search]:focus {
+    width: 150px;
+}
+
+.see_all {
+    display: block;
+}
+
+.see_all>a {
+    position: absolute;
+    bottom: 0;
+    padding: 3% 50% 0 0;
+    border-top: 1px solid #ccc;
+}
+
+
+/* mainbody */
+.mainbody {
+    padding: 10px;
+}
+
+/* 비주얼 메인 */
+    /**이미지슬라이드**/
+.main_visual1, .main_visual2 {
+    max-width: 1920px;
+    min-width: 1500px;
+    position: relative;
+    margin: auto;
+    z-index: 5;
+}
+
+.v1_slide, .v2_slide {
+    display: none;
+    font-size: 0; /*white spacing 빼기*/
+    z-index: 5;
+}
+
+.main_visual1 img {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+    /** 슬라이드 내 텍스트 **/
+
+.v1_btn {
+    font-family: 'NanumSquare';
+    color: #000;
+    font-size: 18px;
+    font-weight:900;
+    background: #fff;
+    position: absolute;
+    padding: 20px 10px 20px 10px;
+    text-align: left;
+}
+
+.v1_btn>a {
+    font-family: 'NanumSquare';
+    color: rgb(85,26,139);
+    font-weight: bold;
+    border: none;
+    padding: 15px 20px 15px 10px;
+    z-index: 6;
+}
+
+.b1 {
+    bottom: 38%;
+    left: 13%;
+}
+
+.b2 {
+    bottom: 25%;
+    left: 13%;
+}
+
+
+.v1_btn>a:hover {
+    color: #333;
+}
+
+.text_square1 {
+    position: absolute;
+    width: 145px;
+    height: 60px;
+    border: 1px solid white;
+    bottom: 37.3%;
+    left: 13.3%;
+}
+
+.text_square2 {
+    position: absolute;
+    width: 162.5px;
+    height: 60px;
+    border: 1px solid white;
+    bottom: 24.1%;
+    left: 13.4%;
+}
+
+/*프로모션 슬로건 */
+.v2_text {
+    width: 100%;
+    min-width: 1340px;
+    height: 280px;
+}
+
+.v2_text p {
+    font-family: 'NanumSquareBold';
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    line-height: 20px;
+    cursor: default;
+}
+
+h4 {
+    font-family: "AdineuePRO";
+    color: #000;
+    font-size: 75px;
+    font-weight: normal;
+}
+
+.v2_text h5 {
+    font-family: 'NanumSquareBold';
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+
+.v2_text div{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.v2_promoline {
+    margin-top: 0;
+}
+
+/*텍스트 js*/ 
+
+.v2_text h4 {
+    position:absolute;
+    left: 38%;
+    background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #000, #ff00c4, #ff0000);
+    background-size: 400%;
+    font-size: 70px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+       background-position: 0%; 
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+
+.v2_text>div::after {
+    border-top: 1px solid black ;
+}
+
+.lining {
+    height: 3px;
+}
+
+.v2_slide{
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 0;
+}
+
+
+.main_video {
+    width: 100%;
+    height: auto;
+    padding: 10px ;
+    background-color: #000;
+    overflow: hidden;
+}
+
+/*슬로건 (impossible is nothing _ white area)*/
+
+.slogan {
+    position:relative;
+    font-size: 0;
+}
+
+.slogan_logo {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.slogan img {
+    margin-top: 30px;
+}
+.slogan_logo h4 {
+    margin: 30px 0 40px 0;
+}
+
+
+/*하단메뉴*/
+
+.bmenu_wrapper {
+    width: 950px;
+    height: 300px;
+    margin: 0 auto;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bmenu_column {
+    font-family: 'NanumSquare';
+    padding-top: 20px;
+    float: left;
+    width: 25%;
+}
+
+.bmenu_column>h2 {
+    font-size: 16px;
+    line-height: 15px;
+    margin-bottom: 10px;
+}
+.bmenu_item>li {
+    margin-bottom: 5px;
+}
+
+.bmenu_item>li>a {
+    color: #000;
+}
+
+.bmenu_item>li>a:visited {
+    color: #000;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    background-color: #ccc;
+}
+
+.info {
+    text-align: left;
+    line-height: 1.4em;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+
+.info_bottom {
+    width: 950px;
+    margin: 0 auto;
+    padding: 30px;
+    font-family: 'NanumSquare';
+    font-size: 13px;
+}
+
+.contract {
+    font-size: 12px;
+    color: #888;
+    padding-bottom: 30px;
+}
+
+.contract ul {
+    float: left;
+}
+
+.contract li {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid #bbb;
+}
+
+.contract a {
+    color: #888;
+}
+
+.contract li:first-child {
+    padding-left: 0;
+}
+
+.contract li:last-child{
+    border-right: none;
+}
+
+.contract li strong {
+	color: #000;
+}
+
+.contract li strong:visited {
+	color: #000;
+}
+
+.contract a:visited {
+    color: #888;
+}
+

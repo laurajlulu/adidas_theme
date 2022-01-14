@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.about_location {
+    font-family: 'NanumSquare';
+    position: absolute;
+    top: 90px;
+    left: 30px;   
+}
+
+#profile {
+    font-family: 'NanumSquare';
+    font-size: 40px;
+    top: 500px;
+    display: inline-block;
+}

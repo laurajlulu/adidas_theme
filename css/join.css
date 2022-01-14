@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+#join_wrapper {
+    min-height: 800px;
+    padding: 30px 0 30px 30px;
+    display: flex;
+    flex-flow: row wrap;    /*수평배치*/ 
+    background-color: #fff;
+    border-radius: 15px 15px 0 0;
+}
+
+.formsign {
+    text-align: right;
+    margin: 30px 0 10px; 
+}
+
+fieldset {
+    padding: 20px;
+    margin-bottom: 30px;
+    margin: 0 0 30px 0 auto;
+}
+
+.member_join {
+    width: 950px;
+    margin: 0 auto;
+    font-family: 'NanumSquare';
+}
+
+.location {
+    position: absolute;
+    top: 90px;
+    left: 80px;   
+}
+
+#logo>img {
+    width: 25px;
+}
+
+#join_form {
+    border-top: 2px solid #ccc;
+}
+
+#join_form p {
+    position: relative;
+    overflow: hidden;
+}
+
+.member_join h2 {
+    font-size: 1.5em;
+    font-family: 'NanumSquare';
+    color: #000;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.require {
+    color: #000;
+}
+
+input {
+    color: #000;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 18px;
+}
+
+input[name=search] {
+    font-family: 'NanumSquare';
+    width: 130px;
+    border: 2px solid #888;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ddd;
+    background-image: url('../images/go_search.png');
+    background-position: 130px 4px;
+    background-repeat: no-repeat;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4 ease-in-out;
+}
+
+input[name=search]:focus {
+    width: 150px;
+}
+
+input[id=name],
+/*input[id=id],*/
+input[id=address_detail],
+input[type=password],
+input[type=tel] {
+    width: 750px;
+    height: 60px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-top: 25px;
+    position: relative;
+}
+
+.address,
+.id {
+    width: 750px;
+    height: 60px;
+    margin: 0 auto;
+    }
+
+input[id=address],
+input[id=id] {
+    width: 650px;
+    height: 60px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-top: 25px;
+    float: left;
+    color: #000;
+}
+
+
+input[id=age_check] {
+    width: 15px;
+    border: 3px solid #444;
+}
+
+.postal {
+    width: 80px;
+    height: 60px;
+    color:#fff;
+    font-size: 9px;
+    background-color: #333;
+    margin-left: 5px;
+    float: right;
+    margin-top: 25px;
+    border-radius: 5px;
+    line-height: 15px;
+}
+
+.form_area p {
+    text-align: left;
+    margin-left: 90px;
+    padding-top: 10px;
+}
+
+label>a {
+    color: #000;
+}
+
+label>a:visited {
+    color: #000;
+}
+
+.btn_join {
+    margin-top: 15px;
+    font-family: 'NanumSquare';
+}
+
+.btn_join button {
+    border: none;
+    width: 120px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.btn_join>button:first-child {
+    color:#fff;
+    font-size: 15px;
+    background-color: #000;
+    margin-right: 15px;
+    border: 1px solid #ccc;
+}
+
+.btn_cancel{
+    color: #555;
+    background-color: #aaa;
+}
+
+/*
+#join_form label, .mailing em {
+    float: left;    /*자식에 float를 썼으면 부모에 overflow 를 거의 꼭 써야해 
+    width: 180px; /*input 입력상자 오는 위치동일하게 하기 위해서 label 크기줌
+    padding: 13px 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #666;
+    background-color: #fffcef;
+}
+
+#join_form .mailing label {
+    float: none;
+    width: auto;
+    padding: 0;
+    background: none;
+}
+
+#join_form input {
+    margin: 10px 0;
+}
+
+
+#join_form input[type="radio"] {
+    margin: 0;
+}
+
+/*a이면서 idcheck인것 & a이면서 findZipcode인것
+a.idcheck, a.findZipcode {
+    font-family: NanumEX;
+    font-size: 0.92em;
+    color: #fff;
+    padding: 3px 15px;
+    border-radius: 20px;
+    margin-left: 5px;
+    text-shadow: 1px 1px 1px #ed676c, -1px -1px 1px #ed676c;
+    /*세번째 1px는 번짐정도. 음수값 없음 주의
+    background-color: #fe8389;
+}
+
+.findZipcode {
+    position: absolute;
+    left: 225px;
+    top: 12px;
+}
+
+.labelAddress {
+    height: 50px;
+    line-height: 50px;
+}
+
+input#address {
+    display: block;
+    margin: 0;
+}
+
+.mailing em {
+    font-style: normal;
+    height: 35px;
+    line-height: 35px;
+}
+
+.mailing span {
+    display: block;
+    margin: 10px 0;
+}
+
+.btnJoinArea {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.btnJoinArea button {
+    font-family: NanumEX;
+    font-size: 1.16em;
+    color: #fff;
+    padding: 8px 20px;
+    margin: 0 5px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+
+.btnOk {
+    background: linear-gradient(to bottom, rgb(98,98,98) 0%, rgb(98,98,98) 50%, rgb(81,81,81) 51%, rgb(81,81,81) 100%);
+}
+
+.btnOk::before {
+    font-family: webcafeIcon;
+    content: "h";
+    font-size: 2em;
+    line-height: 0;
+    position: relative;
+    top: 7px;
+    left: -5px;
+}
+
+.btnCancel {
+    background: linear-gradient(to bottom, rgb(145,145,145) 0%, rgb(145,145,145) 50%, rgb(130,130,130) 51%, rgb(81,81,81) 100%);
+}
+
+
+*/ 

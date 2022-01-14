@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+}
+.loginWrapper {
+    font-family: 'NanumSquare';
+    background-color: white;
+    color: #000;
+}
+
+.welcome {
+    padding-top: 30px;
+    height: 120px;
+    color: #fff;
+    background-color: #000;
+    margin-bottom: 15px;
+}
+
+.welcome>p:first-child {
+    font-size: 20px;
+}
+
+.btn_logout {
+    margin-left: 450px;
+}
+
+.btn_logout>a:link {
+    text-decoration: none;
+    color: #888
+}
+.btn_logout>a:visited {
+    color: #000;
+}
+
+.form_area {
+    height: 400px;
+    width: 900px;
+    margin: auto;
+}
+
+form {
+    margin-top: 30px;
+}
+
+.form_area table .inputFrm {
+    width: 300px;
+    height: 30px;
+}
+
+table {
+    padding: 20px;
+}
+
+
+button {
+    border: none;
+    margin-top: 20px;
+    width: 120px;
+    height: 70px;
+    border-radius: 10px;
+    color:#fff;
+    font-size: 15px;
+    background-color: #000;
+    margin-right: 15px;
+    border: 1px solid #ccc;
+}
