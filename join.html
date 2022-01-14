@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/ico.png">
+    <link rel="stylesheet" href="./css/normalize.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/join.css"/>
+    <script src="https://kit.fontawesome.com/7f4444a31c.js" crossorigin="anonymous"></script>
+
+    <title>Adiclub 회원가입ㅣImpossible Is Nothing</title>    
+</head>
+
+<body>
+    <my-header></my-header>
+
+    <!--회원가입영역-->
+    <div id="join_wrapper">
+        <section class="member_join">
+            <p class="location">Home &gt; <strong>회원가입</strong></p>
+            <h2><img id="logo" src="images/logo_white.png" width="20px" />Adi Club 가입</h2>
+            <p class="formsign"><strong class="require"> ＊ </strong> 는 필수 입력 항목입니다. </p>
+            <form action="join.jsp" method="post" id="join_form" name="join_form">
+                <fieldset>
+                    <legend> Adi Club 신청 양식 </legend>
+                    <!--input과 img는 inline block 요소라 width 도 줄 수 있고..옆으로가고...-
+                <p>
+                    <label for="name">성 명<strong class="require" >＊</strong></label>
+                    <input type="text" id="name" name="name" size="30" required placeholder="홍길동">
+                </p>
+                <p>
+                    <label for="id">아이디<strong class="require">＊</strong></label>
+                    <input type="text" id="id" name="id" size="30" required placeholder="guest">
+                    <a href="#" class="idcheck">ID중복확인</a>
+                </p>
+                <p>
+                    <label for="password">비밀번호<strong class="require"> ＊</strong></label>
+                    <input type="password" id="password" name="password" size="30" required placeholder="영문/숫자 8자 이상">
+                </p>
+                <p>
+                    <label for="confirmPassword">비밀번호 확인<strong class="require"> ＊</strong></label>
+                    <input type="password" id="confirmPassword" size="30" required>
+                </p>
+                <p>
+                    <label for="address" class="labelAddress">주소</label>
+                    <a href="#" class="findZipcode">우편번호 찾기</a>
+                    <!--위의 findZipcode를 한 줄 아래로 내리면 css에서 건들 필요가 없는데
+                    일부러 연습삼아(?) 우편번호 찾기 버튼을 앞으로 꺼내놨다..-
+                    <input type="tel" id="zipcode" name="zipcode" maxlength="5" size="6">
+                    <input type="text" id="address" name="address" maxlength="100" size="60">
+                </p> -->
+                    <div class="form_area">
+                        <input type="text" id="name" name="name" required placeholder="　성　명 ( Name ) * ">
+                        <!--<input type="text" id="id" name="id" required placeholder="　이 메 일 ( Email ) * ">-->
+                        <div class="id"><input type="text" id="id" name="id" size="200px"
+                                placeholder="　이 메 일 ( Email ) * "><button class="postal" type="submit" formnovalidate
+                                onclick="window.location='#';return false;">중복<br />확인</button></div>
+                        <input type="password" id="password" name="password" required
+                            placeholder="　비밀번호 ( Password ) * ">
+                        <p>비밀번호는 8자 이상을 권장합니다. </p>
+                        <input type="password" id="password_check" name="password_check" size="200px" required
+                            placeholder="　비밀번호 확인 ( Password Check) * ">
+                        <div class="address"><input type="text" id="address" name="address" size="200px"
+                                placeholder="　주소 ( Address1 ) "><button class="postal" type="submit" formnovalidate
+                                onclick="window.location='#';return false;">우편번호<br />찾기</button></div>
+                        <input type="text" id="address_detail" name="address" size="200px"
+                            placeholder="　상세주소 ( Address2 ) ">
+                        <input type="tel" id="tel" name="tel" size="200" placeholder="　연락처 ( Contact ) * ">
+                        <p>숫자만 입력 해주세요. </p><br /><br />
+                        <input type="checkbox" id="age_check" name="age_check" value="yes">
+                        <label for="age_check">만 14세 이상입니다. ( I am 14+ years old. )</label><br /><br />
+                        <input type="checkbox" id="agree" name="agree" value="yes">
+                        <label for="agree">필수 약관에 동의합니다. (By checking this box and 'Submit' you agree to the Creators
+                            Club Terms & Conditions,<br /> adidas
+                            Terms & Conditions and the adidas Privacy Policy.)　 　 <a href="" onclick="agree_popup()">약관
+                                및 개인정보 수집
+                                등 내용 확인하기
+                            </a></label>
+                        </p><br />
+                    </div>
+                    <div class="btn_join">
+                        <button type="submit" class="btn_ok">회원가입<br />Submit</button>
+                        <button class="btn_cancel" type="submit" formnovalidate
+                            onclick="window.location='../index.html';return false;">취 소<br />Cancel</button></a>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+    </div>
+    <my-footer></my-footer>
+
+</body>
+
+<!--script-->
+
+<script src="./js/jquery-ui.min.js"></script>
+<script type="module" src="./js/main.js"></script>
+<script>
+    function agree_popup() {
+    window.open("agreement.html", "popup이름", "width=550, height=600");
+}
+</script>
+
+</html>
